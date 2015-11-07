@@ -13,6 +13,7 @@ install:
 - arm-none-eabi-gcc --version
 script: 
 - "make -C software/arbotixpro_cm730_firmware"
+- "cd software/arbotixpro_cm730_firmware"
 - "ls"
 - "pwd"
 deploy:
