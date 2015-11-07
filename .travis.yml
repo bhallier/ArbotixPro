@@ -3,10 +3,14 @@ addons:
     - lib32bz2-1.0
     - lib32ncurses5
     - lib32z1
+    - build-essential
+    - libc6-i386
+    - gcc
 install:
 - wget https://launchpad.net/gcc-arm-embedded/4.9/4.9-2014-q4-major/+download/gcc-arm-none-eabi-4_9-2014q4-20141203-linux.tar.bz2
 - tar -xf gcc-arm-none-eabi-4_9-2014q4-20141203-linux.tar.bz2
-- export PATH=$PATH:$PWD/gcc-arm-none-eabi-4_9-2014q4-20141203-linux/bin
+- export PATH=$PATH:$PWD/gcc-arm-none-eabi-4_9-2014q4/bin
+- arm-none-eabi-gcc --version
 script: "make -C software/arbotixpro_cm730_firmware"
 deploy:
   provider: releases
