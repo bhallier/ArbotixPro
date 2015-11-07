@@ -1,7 +1,8 @@
-before_install:
-- sudo apt-get install lib32bz2-1.0
-- sudo apt-get install lib32ncurses5
-- sudo apt-get install lib32z1
+addons:
+  apt_packages:
+    - lib32bz2-1.0
+    - lib32ncurses5
+    - lib32z1
 install:
 - wget https://launchpad.net/gcc-arm-embedded/4.9/4.9-2014-q4-major/+download/gcc-arm-none-eabi-4_9-2014q4-20141203-linux.tar.bz2
 - tar -xf gcc-arm-none-eabi-4_9-2014q4-20141203-linux.tar.bz2
