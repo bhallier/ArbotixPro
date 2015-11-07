@@ -11,7 +11,10 @@ install:
 - tar -xf gcc-arm-none-eabi-4_9-2014q4-20141203-linux.tar.bz2
 - export PATH=$PATH:$PWD/gcc-arm-none-eabi-4_9-2014q4/bin
 - arm-none-eabi-gcc --version
-script: "make -C software/arbotixpro_cm730_firmware"
+script: 
+- "make -C software/arbotixpro_cm730_firmware"
+- "ls"
+- "pwd"
 deploy:
   provider: releases
   api_key:
