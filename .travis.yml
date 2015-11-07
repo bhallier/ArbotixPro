@@ -16,7 +16,11 @@ deploy:
   provider: releases
   api_key:
     secure: Fjt8KKmnjgA9dMmj6bVeN9OH4sa2Spi+m548kylorrz+lWzLx0CZUw3kX8bO46DSVPQMLB4qsIsHtRUiOJnp6ME1QpYq1f6z7yVvcGyG3vu1Fe9g/cpOab2qx+9cpegbx/9g+yE4xPthGSSxqT03JSvyFFLZ+JOxFOVCERzK358BGMmxhyg+7e3DiL9pRhDhLleTbW5mgXGslqRDro5tvPZLfjR2q6+CS6VMdwvZLPE/8GaoXssbUBQLxacOBAZ4uO5c7TGsprvQM91syQJxCHdkfXTiaxDgATv6l+T4t8wKdAM1xhc7Sk9BOoC2+7gZz7NKUMQ4NXa32Iqp8Fi9xKyO8SCvykecGAhMu5uqh4yrkk36P3gk2imrPXR/PzhyrkZEizLbF0qPSMcnr1MF0mKaQraWTejHyZ9jePJXysEEgapUrcGXLXoZyOu9D65Mh7ByhDRbR7A0jUMtEOM5//vQ2qr+/ZRU2LwaPz7/uCNLr8VY3N7Czl4V5V/Bhvxb85LsEISOHXSlBtr3Zq1oeKv4jvGZFCM390SDI2spOapvX1c3VBiq9mVBh3/E0e2MCeP7qGKVW/1R+MEzjCOkn02X/7Znamhesp+sF5/qG3+dsqL+G8WaMpOWpErag0IRbmgmjIplRVvhBN2SMWv1RvVW3eo29WWqYhLxPYoZ5H0=
-  file: CompiledFile
+  file:
+    - CM730.elf
+    - CM730.bin
+    - CM730.hex
+    - CM730.lss
   skip_cleanup: true
   on:
     repo: bhallier/ArbotixPro
