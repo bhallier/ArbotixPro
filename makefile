@@ -1,1 +1,1 @@
-$(MAKE) -C "software/arbotixpro_cm730_firmware"
+$(MAKE) -C software/arbotixpro_cm730_firmware
